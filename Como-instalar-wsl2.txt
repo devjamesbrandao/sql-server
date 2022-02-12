@@ -1,0 +1,24 @@
+*************************************************Instalação do WSL2 no WINDOWS SEM ENROLAÇÃO*********************
+1° Passo: 
+-- Verificar se a virtualização do processador está habilitada (gerenciador de serviços -> Desempenho)
+
+2° Passo: Ativar WSL
+-- dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart 
+-- Powershell como administrador
+
+3° Passo: Ativar máquina virtual
+-- dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+-- Powershell como administrador
+
+4° Passo: reiniciar o windows
+
+5° Passo: Baixar e instalar kernel do WSL
+-- https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa01ZR2pEbVNNRndObnFDeDJwazNRQWthbFhid3xBQ3Jtc0trdDctemdteE9fMVN2bElRNi00bGZUUTEtNnAwLUlBSXVBaXRvQi1WclpjRWo0dEdkVXRCNkpJSDY3emphRzJyUFlLNGpHTE9LdW85dE9UUEZDenBxRTU4azVHeDRydThFZUV5VVJNWXNodjRfMGo1dw&q=https%3A%2F%2Fwslstorestorage.blob.core.windows.net%2Fwslblob%2Fwsl_update_x64.msi
+
+6° Passo: Definir wsl como PADRÃO
+-- wsl --set-default-version 2
+-- Powershell como administrador
+
+7° Instalar distribuição linux: 
+-- WIN + R e cola esse comando: ms-windows-store://collection/?CollectionId=LinuxDistros
+
