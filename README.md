@@ -4,3 +4,4 @@ O intuito deste repositório é disponibilizar conteúdos úteis ao dia a dia so
 ## Tecnologias e versões utilizadas
 *   SQL
 *   SQL SERVER DEVELOPMENT 2019
+*   Docker Desktop
